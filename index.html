@@ -7,31 +7,40 @@
     <title>Juego de PPT</title>
 </head>
 <body>
-    <h1>Piedra Papel o Tijera</h1> 
-    <p>
-        Las Reglas son las siguientes:
-        <span>Piedra le gana a Tijera</span>
-        <span>Tijera le gana a Papel</span>
-        <span>Papel le gana a Piedra</span>
-    </p>
+    <div class="container">
+    <h1><span class="Piedra">Piedra </span><span class="Papel">Papel </span><span class="Tijera">o Tijera</span></h1> 
+    <div class="reglas_juego">
+        <h4>Las Reglas son las siguientes:</h4> 
+        <p>
+            <span class="winPiedra"><span class="regPiedra">Piedra</span> le gana a <span class="regiTijeraP">Tijera</span></span><br>
+            <span class="winTijera"><span class="regTijera">Tijera</span> le gana a <span class="regPapelT">Papel</span></span><br>
+            <span class="winPapel"><span class="regPapel">Papel</span> le gana a <span class="regPiedraP">Piedra</span></span><br>
+         </p>
+    </div>
 
-    <h2>
+    <div class="opciones_game">
+        <h2>Por favor elige que quieres jugar:</h2>
+        <input class="btn_piedra" id="bnt-piedra" type="button" value="Piedra 👊" onclick="">
+        <input class="btn_papel" id="btn-papel" type="button" value="Papel ✋" onclick="">
+        <input class="btn_tijera" id="btn-tijera"type="button" value="Tijera ✌" onclick="">
+    </div>
 
-    </h2>
+    <div class="resultado_game">
+        <h5 class="eleccionUsuario">Has escogido:</h5>
+        <span class="lbl-Usuario" id="lbl-Usuario">Respuesta del Usuario</span>
+        <br>
+        <br>
 
-    <input id="bnt-piedra" type="button" value="Piedra 👊" onclick="">
-    <input id="btn-papel" type="button" value="Papel ✋" onclick="">
-    <input id="btn-tijera"type="button" value="Tijera ✌" onclick="">
+        <h5 class="eleccionMaquina">La maquina ha escogido</h5>
+        <span class="lbl-Maquina" id="lbl-Maquina">Resultado Maquina</span>
+        <br>
+        <br>
+        <h5 class="resultados">Resultado</h5>
+        <h4 class="Us_vs_Mq"><span class="resUs">Usuario</span> vs <span class="resMq">Maquina</span></h4>
+        <span class="puntosUs">5</span> : <span class="puntosMa">3</span>
+    </div>
 
-    <h5>Has escogido:</h5>
-    <span id="lbl-Usuario">Respuesta del Usuario</span>
-    <br>
-    <br>
-    <h5>La maquina ha escogido</h5>
-    <span id="lbl-Maquina">Resultado Maquina</span>
-    <h3>Resultado</h3>
-    <h4>Usuario vs Maquina</h4>
-    <span>5</span> : <span>3</span>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,3 +3,269 @@
     padding: 0;
 }
 
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:#000361;
+}
+
+.container{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container h1{
+    font-family: 'Cooper';
+    font-size: 6em;
+}
+
+.container .Piedra{
+    color: #555555;
+    text-shadow: 1px 1px 2px white;
+}
+
+.container .Papel{
+    color: #fff;
+    text-shadow: 1px 1px 2px white;
+}
+
+.container .Tijera{
+    color: #F4ED0E;
+    text-shadow: 1px 1px 2px white;
+}
+
+.container .reglas_juego{
+    position: relative;
+    top: 10%;
+    text-align: center;
+    background-color:#000475;
+}
+
+.container .reglas_juego h4{
+    color:#FD001F;
+    font-family: 'Cooper';
+    font-size: 2.8em;
+    letter-spacing: 2px;
+    font-weight: 800px;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 3px white;
+}
+
+
+.container .reglas_juego p{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-size: 2em;
+    font-family: 'Cooper';
+}
+
+/* --------------- Regla Piedra ----------------------*/
+.container .reglas_juego p .winPiedra{
+    color:#fff;
+    font-style: italic;
+}
+
+.container .reglas_juego p .winPiedra .regPiedra{
+    font-size: 1.2em;
+    color: #555555;
+    text-shadow: 1px 1px 2px white;
+}
+
+.container .reglas_juego p .winPiedra .regiTijeraP{
+    font-size: 1.2em;
+    color:#F4ED0E;
+    text-shadow: 1px 1px 2px white;
+}
+
+/* --------------------------------------------------*/
+
+/* --------------- Regla Tijera ----------------------*/
+.container .reglas_juego p .winTijera{
+    color:#fff;
+    font-style: italic;
+}
+
+.container .reglas_juego p .winTijera .regTijera{
+    font-size: 1.2em;
+    color: #F4ED0E;
+    text-shadow: 1px 1px 2px white;
+}
+
+.container .reglas_juego p .winTijera .regPapelT{
+    font-size: 1.2em;
+    color:#fff;
+    text-shadow: 1px 1px 2px white;
+}
+
+/*----------------------------------------------------------*/
+
+/* --------------- Regla Papel ----------------------*/
+
+.container .reglas_juego p .winPapel{
+    color:#fff;
+    font-style: italic;
+}
+
+.container .reglas_juego p .winPapel .regPapel{
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 1px 1px 2px white;
+}
+
+.container .reglas_juego p .winPapel .regPiedraP{
+    font-size: 1.2em;
+    color: #555555;
+    text-shadow: 1px 1px 2px white;
+}
+
+/*----------------------------------------------------------*/
+
+
+
+.container .opciones_game{
+    position: relative;
+    top: 20%;
+}
+
+.container .opciones_game h2{
+    margin-bottom: 50px;
+    color: #FD001F;
+    font-family: 'Cooper';
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px white;
+}
+
+.container .opciones_game input{
+    font-family: 'Cooper';
+    font-size: 40px;
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.container .opciones_game input:hover{
+    transform: scale(1.1);
+}
+
+
+.container .opciones_game .btn_piedra{
+    color: #555555;
+    text-shadow: 1px 2px 2px white;
+    background: linear-gradient( #f9e6e5,#eca9a9,#d11527);
+}
+.container .opciones_game .btn_piedra:hover{
+    box-shadow: 1px 1px 40px #eca9a9;
+}
+
+
+
+.container .opciones_game .btn_papel{
+    color:#fff;
+    text-shadow: 1px 3px 3px black;
+    background: linear-gradient(#e6fc7d, #bfeb4c, #227904);
+}
+
+.container .opciones_game .btn_papel:hover{
+    box-shadow: 1px 1px 40px #bfeb4c;
+}
+
+
+
+.container .opciones_game .btn_tijera{
+    color: #F4ED0E;
+    text-shadow: 3px 2px 4px black;
+    background: linear-gradient(#00b8a0,#0194ac, #2f347d);
+}
+
+.container .opciones_game .btn_tijera:hover{
+    box-shadow: 1px 1px 40px #0194ac;
+}
+
+
+.container .resultado_game{
+    position: relative;
+    top: 35%;
+}
+
+.container .resultado_game .eleccionUsuario{
+    margin: 20px;
+    font-family: 'Cooper';
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 1px 2px 4px #F88A00;
+}
+
+
+.container .resultado_game .lbl-Usuario{
+    font-family: 'Cooper';
+    font-size: 1.5em;
+    color: #F88A00;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.container .resultado_game .eleccionMaquina{
+    margin: 20px;
+    font-family: 'Cooper';
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 1px 2px 3px #00F9DF;
+}
+
+.container .resultado_game .lbl-Maquina{
+    font-family: 'Cooper';
+    font-size: 1.5em;
+    color: #00F9DF;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.container .resultado_game .resultados{
+    margin: 20px;
+    font-family: 'Cooper';
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 1px 2px 3px blue;
+}
+
+.container .resultado_game .Us_vs_Mq{
+    margin: 20px;
+    font-family: 'Cooper';
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 1px 2px 3px blue;
+}
+
+.container .resultado_game .resUs{
+    color: #F88A00;
+    text-shadow: 1px 3px 3px white;
+}
+
+.container .resultado_game .resMq{
+    color: #00F9DF;
+    text-shadow: 1px 3px 3px white;
+}
+
+.container .resultado_game .puntosUs{
+    position: relative;
+    right: 100px;
+    color: #F88A00;
+    font-family: 'Cooper';
+    font-size: 2em;
+}
+
+
+.container .resultado_game .puntosMa{
+    position: relative;
+    left: 100px;
+    color: #00F9DF;
+    font-family: 'Cooper';
+    font-size: 2em;
+}
