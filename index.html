@@ -1,46 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Juego de PPT</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-    <h1><span class="Piedra">Piedra </span><span class="Papel">Papel </span><span class="Tijera">o Tijera</span></h1> 
-    <div class="reglas_juego">
-        <h4>Las Reglas son las siguientes:</h4> 
+      <h1>
+        <span class="Piedra">Piedra </span><span class="Papel">Papel </span
+        ><span class="Tijera">o Tijera</span>
+      </h1>
+      <div class="reglas_juego">
+        <h4>Las Reglas son las siguientes:</h4>
         <p>
-            <span class="winPiedra"><span class="regPiedra">Piedra</span> le gana a <span class="regiTijeraP">Tijera</span></span><br>
-            <span class="winTijera"><span class="regTijera">Tijera</span> le gana a <span class="regPapelT">Papel</span></span><br>
-            <span class="winPapel"><span class="regPapel">Papel</span> le gana a <span class="regPiedraP">Piedra</span></span><br>
-         </p>
-    </div>
+          <span class="winPiedra"
+            ><span class="regPiedra">Piedra</span> le gana a
+            <span class="regiTijeraP">Tijera</span></span
+          ><br />
+          <span class="winTijera"
+            ><span class="regTijera">Tijera</span> le gana a
+            <span class="regPapelT">Papel</span></span
+          ><br />
+          <span class="winPapel"
+            ><span class="regPapel">Papel</span> le gana a
+            <span class="regPiedraP">Piedra</span></span
+          ><br />
+        </p>
+      </div>
 
-    <div class="opciones_game">
+      <div class="opciones_game">
         <h2>Por favor elige que quieres jugar:</h2>
-        <input class="btn_piedra" id="bnt-piedra" type="button" value="Piedra 👊" onclick="">
-        <input class="btn_papel" id="btn-papel" type="button" value="Papel ✋" onclick="">
-        <input class="btn_tijera" id="btn-tijera"type="button" value="Tijera ✌" onclick="">
-    </div>
+        <button
+          class="btn_piedra"
+          id="bnt-piedra"
+          type="button"
+          value="0">
+          Piedra 👊</button>
+        <button
+          class="btn_papel"
+          id="bnt-papel"
+          type="button"
+          value="1">
+          Papel ✋</button>
+        <button
+        class="btn_tijera"
+        id="bnt-tijera"
+        type="button"
+        value="2">  
+        Tijera ✌</button>
+      </div>
 
-    <div class="resultado_game">
+      <div class="resultado_game">
         <h5 class="eleccionUsuario">Has escogido:</h5>
         <span class="lbl-Usuario" id="lbl-Usuario">Respuesta del Usuario</span>
-        <br>
-        <br>
+        <br />
+        <br />
 
         <h5 class="eleccionMaquina">La maquina ha escogido</h5>
-        <span class="lbl-Maquina" id="lbl-Maquina">Resultado Maquina</span>
-        <br>
-        <br>
-        <h5 class="resultados">Resultado</h5>
-        <h4 class="Us_vs_Mq"><span class="resUs">Usuario</span> vs <span class="resMq">Maquina</span></h4>
-        <span class="puntosUs">5</span> : <span class="puntosMa">3</span>
+        <span class="lbl-Maquina" id="lbl-Maquina">Respuesta Maquina</span>
+        <br />
+        <br />
+        <h5 class="resultados" id="resultados">Resultado</h5>
+        <h4 class="Us_vs_Mq">
+          <span class="resUs">Usuario</span> vs
+          <span class="resMq">Maquina</span>
+        </h4>
+        <span class="puntosUs" id="puntosUs">0</span> : <span class="puntosMa" id="puntosCPU">0</span>
+      </div>
     </div>
-
-    </div>
-    <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script> 
+  </body>
 </html>
