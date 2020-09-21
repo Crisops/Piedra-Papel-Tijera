@@ -88,8 +88,6 @@ function incrementUs(){
 
     if (seleccionUsuario == 0 && seleccionCPU == 2 ||seleccionUsuario == 1 && seleccionCPU == 0 || seleccionUsuario == 2 && seleccionCPU == 1 ) {
         contaUs.innerHTML = contadorUs++;
-    }else if(seleccionUsuario == seleccionCPU){
-        alert(`Hubo Empate. Usuario saco ${option[seleccionUsuario]} y la Maquina ${option[seleccionCPU]}`)
     }
     return contadorUs
 }
