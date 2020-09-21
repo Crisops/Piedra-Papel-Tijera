@@ -38,8 +38,8 @@ function startGame(valorUsuario){
     seleccionUsuario = valorUsuario;
     seleccionCPU = cpuNumber();
     checkGame = getCheckUserAndCPU(seleccionUsuario,seleccionCPU);
-    conteo = incrementUs(seleccionUsuario,seleccionCPU);
-    conteoMa = incrementMa(seleccionUsuario,seleccionCPU);
+    conteo = incrementUs();
+    conteoMa = incrementMa();
     labelUs.innerHTML = option[seleccionUsuario];
     labelMa.innerHTML = option[seleccionCPU];
 
@@ -84,7 +84,7 @@ function cpuNumber(){
 }
 
 
-function incrementUs(secUs, secMa){
+function incrementUs(){
 
     if (seleccionUsuario == 0 && seleccionCPU == 2 ||seleccionUsuario == 1 && seleccionCPU == 0 || seleccionUsuario == 2 && seleccionCPU == 1 ) {
         contaUs.innerHTML = contadorUs++;
@@ -94,7 +94,7 @@ function incrementUs(secUs, secMa){
     return contadorUs
 }
 
-function incrementMa(secUs, secMa){
+function incrementMa(){
 
     if (seleccionUsuario == 0 && seleccionCPU == 1 ||seleccionUsuario == 1 && seleccionCPU == 2 || seleccionUsuario == 2 && seleccionCPU == 0 ) {
         contaCPU.innerHTML = contadorMa++;
